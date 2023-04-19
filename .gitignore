@@ -120,3 +120,6 @@ oauth_keys/
 deployment_identifier
 /travis_wait*
 /files-private
+
+# Ignore in development module.
+/docroot/modules/custom/
