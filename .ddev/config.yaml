@@ -1,5 +1,5 @@
-name: drupal-graphql-learn
-type: drupal10
+name: drupal-ees
+type: drupal9
 docroot: docroot
 php_version: "8.1"
 webserver_type: nginx-fpm
