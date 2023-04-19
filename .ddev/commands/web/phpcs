@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+## Description: Run phpcs commands in the web container.
+## Usage: phpcs [phpcs command]
+## Example: "ddev phpcs"
+
+phpcs --standard=Drupal,DrupalPractice,SlevomatCodingStandard --extensions=php,module,inc,install,test,profile,theme "$@"
+
+# exit=$?
+
+# # Exit code 0 is important for the pre-commit hook to work.
+# # See https://github.com/squizlabs/PHP_CodeSniffer/issues/1818
+# if [[ $exit -eq 0 || $exit -eq 1 ]]; then
+#     exit 0
+# fi
+
+# exit $exit
