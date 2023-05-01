@@ -22,8 +22,13 @@
         "drupal/core-composer-scaffold": "^9.0",
         "drupal/core-project-message": "^9.0",
         "drupal/core-recommended": "^9.0",
+        "drupal/devel": "^5.1",
         "drupal/graphql": "^4",
-        "drush/drush": "^11.5"
+        "drupal/pathauto": "^1.11",
+        "drupal/search_api": "^1.29",
+        "drush/drush": "^11.5",
+        "elastic/enterprise-search": "^8.7",
+        "php-http/guzzle6-adapter": "^2.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -37,7 +42,8 @@
             "drupal/core-project-message": true,
             "phpstan/extension-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "acquia/blt": true
+            "acquia/blt": true,
+            "php-http/discovery": true
         },
         "sort-packages": true
     },
