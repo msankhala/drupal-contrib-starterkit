@@ -23,12 +23,7 @@
         "drupal/core-project-message": "^9.0",
         "drupal/core-recommended": "^9.0",
         "drupal/devel": "^5.1",
-        "drupal/graphql": "^4",
-        "drupal/pathauto": "^1.11",
-        "drupal/search_api": "^1.29",
-        "drush/drush": "^11.5",
-        "elastic/enterprise-search": "^8.7",
-        "php-http/guzzle6-adapter": "^2.0"
+        "drush/drush": "^11.5"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -51,7 +46,10 @@
         "drupal-scaffold": {
             "locations": {
                 "web-root": "docroot/"
-            }
+            },
+          "file-mapping": {
+              "[web-root]/sites/development.services.yml": false
+          }
         },
         "installer-paths": {
             "docroot/core": [

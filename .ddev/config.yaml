@@ -1,4 +1,4 @@
-name: drupal-ees
+name: drupal-contrib-starterkit
 type: drupal9
 docroot: docroot
 php_version: "8.1"
@@ -13,7 +13,7 @@ database:
     version: "10.4"
 nfs_mount_enabled: false
 mutagen_enabled: false
-omit_containers: [dba]
+omit_containers: []
 use_dns_when_possible: true
 composer_version: "2"
 web_environment: []
