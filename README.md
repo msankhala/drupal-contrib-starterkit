@@ -50,14 +50,17 @@ This is a starterkit to help you contribute to Drupal modules and themes. This s
 
 ## Installing Specific Node version inside the web container
 
-Ddev has pre-installed nvm. You can use nvm to install any node version you want. For example, if you want to install node version 14.17.0, you can run the following command:
-
-```bash
-ddev nvm ls
-```
+Ddev has pre-installed nvm. You can use nvm to install any node version you want. For example, if you want to install node version 18.13.0, you can run the following command:
 
 Install node version 18.13.0
 
 ```bash
 ddev nvm install 18.13.0
 ```
+
+List the installed node versions
+
+```bash
+ddev nvm ls
+```
+
