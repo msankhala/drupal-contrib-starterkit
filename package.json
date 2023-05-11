@@ -10,10 +10,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },
-  "validate-branch-name": {
-    "pattern": "^(issue-)[0-9]+.+$",
-    "errorMsg": "Please use the following branch naming convention: issue-<ISSUE-ID>-some-title, issue-3349080-some-title, issue-3349080-timestampdatetime-widget-not-null"
-  },
   "repository": {
     "type": "git",
     "url": "git@github.com:msankhala/drupal-contrib-starterkit.git"

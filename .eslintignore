@@ -1,0 +1,5 @@
+vendor/**/*
+node_modules/**/*
+!*.es6.js
+!**/Nightwatch/**/*.js
+!**/tests/**/*.js

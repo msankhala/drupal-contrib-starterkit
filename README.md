@@ -1,11 +1,19 @@
 # Drupal Contrib Starterkit
 
-This is a starterkit to help you contribute to Drupal modules and themes. This starterkit provides all the tools you need to get started with contributing to Drupal and it ensure that you follow the Drupal coding standards.
+This is a starterkit to help you contribute to Drupal modules and themes. This starterkit provides all the tools you need to get started with contributing to Drupal and it ensure that you follow the Drupal coding standards. This will give you a running drupal site with all the tools you need.
 
 ## Requirements
 
 1. [Colima](https://smallsharpsoftwaretools.com/tutorials/use-colima-to-run-docker-containers-on-macos/) or Docker Desktop
 1. [ddev](https://ddev.readthedocs.io/en/stable/)
+
+## Getting Started
+
+1. Clone this repository `git clone https://github.com/msankhala/drupal-contrib-starterkit.git`
+1. Run `ddev start`
+1. Run `ddev composer install`
+1. Run `ddev npm install`
+1. Run `ddev drush site:install --account-name=admin --account-pass=admin -y`
 
 ## Tools
 
