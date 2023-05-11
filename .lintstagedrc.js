@@ -6,11 +6,11 @@ module.exports = {
     'stylelint --fix --config .stylelintrc.js',
   ],
   '**/*.{html.twig,twig}': [
-    '.ddev/commands/web/twig-cs-fixer --fix',
-    '.ddev/commands/web/twig-cs-fixer',
+    `${process.env.DDEV_COMPOSER_ROOT}/.ddev/commands/web/twig-cs-fixer --fix`,
+    `${process.env.DDEV_COMPOSER_ROOT}/.ddev/commands/web/twig-cs-fixer`,
   ],
   '**/*.{php,inc,install,module,test,profile,theme}': [
-    '.ddev/commands/web/phpcbf',
-    '.ddev/commands/web/phpcs',
+    `${process.env.DDEV_COMPOSER_ROOT}/.ddev/commands/web/phpcbf`,
+    `${process.env.DDEV_COMPOSER_ROOT}/.ddev/commands/web/phpcs`,
   ],
 };

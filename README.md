@@ -1,6 +1,6 @@
 # Drupal Contrib Starterkit
 
-This is a starterkit to help you contribute to Drupal modules and themes. This starterkit provides all the tools you need to get started with contributing to Drupal and it ensure that you follow the Drupal coding standards. This will give you a running drupal site with all the tools you need.
+If you want to contribute to Drupal modules and themes, this starterkit is for you. It provides all the necessary tools to get started with contributing to Drupal and ensures that you follow the Drupal coding standards. By using this starterkit, you'll have a running Drupal site with all the required tools for development. All you need to do is copy this repository and run a few commands. You can change the project's name in the `.ddev/config.yaml` file and update the Drupal version by changing the `drupal/core-recommended` version in the `composer.json` file and running the `ddev composer install` command. Available Drupal versions are listed on this page: https://github.com/drupal/core-recommended/tags. With this starterkit, you can start contributing to Drupal projects without worrying about setting up a development environment from scratch.
 
 ## Requirements
 
@@ -15,6 +15,29 @@ This is a starterkit to help you contribute to Drupal modules and themes. This s
 1. Run `ddev nvm install stable`
 1. Run `ddev npm install`
 1. Run `ddev drush site:install --account-name=admin --account-pass=admin -y`
+
+## Precommit hooks
+
+This starterkit provides the precommit hooks that will run each time you try to commit in this repository. The precommit hooks will run the following commands based on the file extensions.
+
+1. secretlint
+1. prettier --write
+1. eslint --fix
+1. stylelint --fix
+1. twig-cs-fixer --fix
+1. phpcbf
+1. phpcs
+
+## Using precommit hooks for custom modules and themes
+
+For any module or theme that you want to contribute to, you can use the precommit hooks provided by this starterkit.
+
+1. First clone the module or theme in the `docroot/modules/custom` or `docroot/themes/custom` directory.
+1. Then run `git config core.hooksPath ../../../../.husky` command in the module or theme directory. This will set the custom module or theme to use the precommit hooks provided by this starterkit.
+
+```bash
+git config core.hooksPath ../../../../.husky
+```
 
 ## Tools
 
@@ -63,4 +86,3 @@ List the installed node versions
 ```bash
 ddev nvm ls
 ```
-

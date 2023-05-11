@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+## Description: Run lint-staged commands in the web container.
+## Usage: lint-staged [lint-staged command]
+## Example: "ddev lint-staged"
+
+npx lint-staged "$@"
