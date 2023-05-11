@@ -1,3 +1,4 @@
+// @See available rules https://denar90.github.io/eslint.github.io/docs/rules/
 module.exports = {
   extends: [
     'airbnb-base',
@@ -64,5 +65,6 @@ module.exports = {
     ],
     'yml/indent': ['error', 2],
     'func-names': ['warn', 'as-needed', { generators: 'as-needed' }],
+    'object-shorthand': ['warn', 'properties'],
   },
 };
