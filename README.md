@@ -1,8 +1,11 @@
 # Drupal Contrib Starterkit
 
-This is a starterkit to help you contribute to Drupal modules and  themes. This starterkit provides all the tools you need to get started with contributing to Drupal.
+This is a starterkit to help you contribute to Drupal modules and themes. This starterkit provides all the tools you need to get started with contributing to Drupal and it ensure that you follow the Drupal coding standards.
 
 ## Requirements
+
+1. [Colima](https://smallsharpsoftwaretools.com/tutorials/use-colima-to-run-docker-containers-on-macos/) or Docker Desktop
+1. [ddev](https://ddev.readthedocs.io/en/stable/)
 
 ## Tools
 
@@ -35,3 +38,17 @@ This is a starterkit to help you contribute to Drupal modules and  themes. This 
 1. [PHP Sniffer & Beautifier](https://marketplace.visualstudio.com/items?itemName=ValeryanM.vscode-phpsab)
 1. [Drupal Check](https://marketplace.visualstudio.com/items?itemName=bbeversdorf.drupal-check)
 1. [PHP Debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug)
+
+## Installing Specific Node version inside the web container
+
+Ddev has pre-installed nvm. You can use nvm to install any node version you want. For example, if you want to install node version 14.17.0, you can run the following command:
+
+```bash
+ddev nvm ls
+```
+
+Install node version 18.13.0
+
+```bash
+ddev nvm install 18.13.0
+```

@@ -123,3 +123,4 @@ deployment_identifier
 
 # Ignore in development module.
 /docroot/modules/custom/
+node_modules

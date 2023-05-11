@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+## Description: Run eslint commands in the web container.
+## Usage: eslint [eslint command]
+## Example: "ddev eslint"
+
+./node_modules/eslint/bin/eslint.js --config /var/www/html/.eslintrc.js --ignore-path /var/www/html/.eslintignore --fix "$@"

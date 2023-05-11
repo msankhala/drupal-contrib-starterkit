@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+## Description: Run stylelint commands in the web container.
+## Usage: stylelint [stylelint command]
+## Example: "ddev stylelint"
+
+./node_modules/stylelint/bin/stylelint.js --config /var/www/html/.stylelintrc.js --ignore-path /var/www/html/.secretlintignore --fix "$@"

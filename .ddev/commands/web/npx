@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+## Description: Run npx commands in the web container.
+## Usage: npx [npx command]
+## Example: "ddev npx lint-staged" or "ddev npx validate-branch-name"
+
+npx "$@"
