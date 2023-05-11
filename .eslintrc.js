@@ -27,6 +27,7 @@ module.exports = {
     CKEDITOR: true,
     CKEditor5: true,
     tabbable: true,
+    dataLayer: true,
   },
   rules: {
     'prettier/prettier': 'error',
@@ -52,12 +53,16 @@ module.exports = {
         requireReturn: false,
       },
     ],
-    'no-unused-vars': ['warn', { argsIgnorePattern: '^_|context|settings' }],
+    'no-unused-vars': [
+      'warn',
+      { vars: 'all', args: 'none', ignoreRestSiblings: false },
+    ],
     'operator-linebreak': [
       'error',
       'after',
       { overrides: { '?': 'ignore', ':': 'ignore' } },
     ],
     'yml/indent': ['error', 2],
+    'func-names': ['warn', 'as-needed', { generators: 'as-needed' }],
   },
 };
