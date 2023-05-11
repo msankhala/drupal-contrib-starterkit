@@ -12,6 +12,7 @@ This is a starterkit to help you contribute to Drupal modules and themes. This s
 1. Clone this repository `git clone https://github.com/msankhala/drupal-contrib-starterkit.git`
 1. Run `ddev start`
 1. Run `ddev composer install`
+1. Run `ddev nvm install stable`
 1. Run `ddev npm install`
 1. Run `ddev drush site:install --account-name=admin --account-pass=admin -y`
 
