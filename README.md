@@ -27,9 +27,11 @@ This is a starterkit to help you contribute to Drupal modules and  themes. This 
 1. [Coder](https://www.drupal.org/project/coder)
 1. [Devel](https://www.drupal.org/project/devel)
 1. [Drush](https://github.com/drush-ops/drush)
+1. [Drupal Check](https://github.com/mglaman/drupal-check)
 
 ## Useful Vscode extensions
 
 1. [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
 1. [PHP Sniffer & Beautifier](https://marketplace.visualstudio.com/items?itemName=ValeryanM.vscode-phpsab)
 1. [Drupal Check](https://marketplace.visualstudio.com/items?itemName=bbeversdorf.drupal-check)
+1. [PHP Debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug)
