@@ -36,6 +36,7 @@ For any module or theme that you want to contribute to, you can use the precommi
 1. Then run `git config core.hooksPath ../../../../.husky` command in the module or theme directory. This will set the custom module or theme to use the precommit hooks provided by this starterkit.
 
 ```bash
+cd docroot/modules/custom/<module-name> or docroot/themes/custom/<theme-name>
 git config core.hooksPath ../../../../.husky
 ```
 
@@ -87,9 +88,44 @@ List the installed node versions
 ddev nvm ls
 ```
 
+Use the installed node version
+
+```bash
+ddev nvm use 18.13.0
+```
+
 ## Changing drupal core version
 
 You can simply change the drupal core version in the `composer.json` file and run the `ddev composer install` command. This starterkit is using drupal/core-recommended package. You can find the available drupal core versions here:
 https://github.com/drupal/core-recommended/tags
 
+## Bypass the precommit hooks
 
+Sometimes you may want to bypass the precommit hooks, Because it is throwing some linting error that you may want to fix letter or it is not part of the scope of the issue that you try to fix. You can do that by using the `--no-verify` flag with the `git commit` command.
+
+```bash
+git commit -m "Commit message" --no-verify
+```
+
+## Updating the linting rules and ignore files
+
+There are two files for each linting tool. One is the rule file and the other is the ignore file. You can find these files in the repo root. You can update these files as per your need but it is **NOT** recommended to update the rule file. You can update the ignore file if you want to ignore any file or directory from linting. Below are the files for each linting tool.
+
+1. .eslintrc.js
+1. .eslintignore
+1. .stylelintrc.js
+1. .stylelintignore
+1. .prettierrc.js
+1. .prettierignore
+1. .secretlintrc.js
+1. .secretlintignore
+
+**Note:** The linting rule files are supported in different formats like `.json, .yaml, .cjs, .mjs, rc files, etc`. But we are sticking with `.js` files because it is easy to use and maintain and you can add comments and use variables in `.js` files.
+
+## Updating the validate branch naming rule
+
+There is `.validate-branch-namerc.js` file that contains the rule for validating the branch name. You can update this file as per your need.
+
+## Adding issue number automatically to commit message
+
+There is `jira-prepare-commit-msg.config.js` file that will automatically add the issue number to the commit message. You can update this file as per your need.
