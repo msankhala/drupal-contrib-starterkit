@@ -13,5 +13,5 @@ source $(dirname $0)/../scripts/utils.sh
 commit_path=$(get_commit_path)
 
 # Run the lint-staged command with the commit path
-ddev npx lint-staged --no-stash -d --cwd "$commit_path"
+ddev npx lint-staged --no-stash --cwd "$commit_path"
 
