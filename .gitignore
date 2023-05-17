@@ -121,6 +121,18 @@ deployment_identifier
 /travis_wait*
 /files-private
 
-# Ignore in development module.
+# Ignore in development modules/themes. This is intensionally added so that each
+# custom module or theme can be its own repository.
 /docroot/modules/custom/
+/docroot/themes/custom/
+
+# Ignore blt generated files or added by drpual install.
+/docroot/*.*
+/docroot/.*.*
+/docroot/.*
+/docroot/.cslintrc
+/docroot/.eslintignore
+/docroot/.eslintrc.*
+
+# Ignore node_modules in repo rooot.
 node_modules

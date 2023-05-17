@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+## Description: Run prettier commands in the web container.
+## Usage: prettier [prettier command]
+## Example: "ddev prettier"
+
+./node_modules/prettier/bin-prettier.js --config /var/www/html/.prettierrc.js --ignore-path /var/www/html/.prettierignore "$@"

@@ -86,3 +86,10 @@ List the installed node versions
 ```bash
 ddev nvm ls
 ```
+
+## Changing drupal core version
+
+You can simply change the drupal core version in the `composer.json` file and run the `ddev composer install` command. This starterkit is using drupal/core-recommended package. You can find the available drupal core versions here:
+https://github.com/drupal/core-recommended/tags
+
+

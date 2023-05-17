@@ -3,7 +3,7 @@ module.exports = {
   '**/*.{js,yml,yaml}': ['prettier --write', 'eslint --fix'],
   '**/*{.scss,css}': [
     'prettier --write',
-    'stylelint --fix --config .stylelintrc.js',
+    `stylelint --fix --config ${process.env.DDEV_COMPOSER_ROOT}/.stylelintrc.js`,
   ],
   '**/*.{html.twig,twig}': [
     `${process.env.DDEV_COMPOSER_ROOT}/.ddev/commands/web/twig-cs-fixer --fix`,
