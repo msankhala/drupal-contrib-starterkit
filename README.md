@@ -129,3 +129,10 @@ There is `.validate-branch-namerc.js` file that contains the rule for validating
 ## Adding issue number automatically to commit message
 
 There is `jira-prepare-commit-msg.config.js` file that will automatically add the issue number to the commit message. You can update this file as per your need.
+
+## Updating the Drupal version
+
+By default this starterkit will install the drupal 9. You can change the drupal version by following the below steps.
+
+1. Update the drupal/core-recommended version in the `composer.json` file.
+1. Run the `ddev composer update` command, This will update the dependencies.
