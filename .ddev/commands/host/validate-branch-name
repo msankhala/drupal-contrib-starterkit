@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+## Description: Run validate-branch-name commands on host.
+## Usage: validate-branch-name [validate-branch-name command]
+## Example: "ddev validate-branch-name"
+
+source $(dirname $0)/../../../scripts/utils.sh
+
+# Get the commit path
+commit_path=$(get_commit_path)
+
+echo "commit_path: $commit_path"
+# Run the validate-branch-name command with the commit path
+ddev exec cd $commit_path && npx validate-branch-name

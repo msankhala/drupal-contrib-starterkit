@@ -5,7 +5,7 @@
 [ -n "$CI" ] && exit 0
 
 # Validate branch name before commit.
-ddev npx validate-branch-name
+ddev validate-branch-name
 
 source $(dirname $0)/../scripts/utils.sh
 
@@ -13,5 +13,4 @@ source $(dirname $0)/../scripts/utils.sh
 commit_path=$(get_commit_path)
 
 # Run the lint-staged command with the commit path
-ddev npx lint-staged --no-stash --cwd "$commit_path"
-
+ddev lint-staged --no-stash --cwd "$commit_path"
