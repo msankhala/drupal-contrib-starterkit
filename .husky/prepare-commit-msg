@@ -5,4 +5,4 @@
 [ -n "$CI" ] && exit 0
 
 # Prepare the commit message.
-ddev npx jira-prepare-commit-msg $1
+ddev jira-prepare-commit-msg $1

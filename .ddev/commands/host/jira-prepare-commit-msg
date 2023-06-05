@@ -11,4 +11,4 @@ commit_path=$(get_commit_path)
 
 echo "commit_path: $commit_path"
 # Run the jira-prepare-commit-msg command with the commit path
-ddev exec cd $commit_path && npx jira-prepare-commit-msg
+ddev exec cd $commit_path && npx jira-prepare-commit-msg $1
